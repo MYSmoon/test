@@ -4,13 +4,23 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+F1 = 1
+F2 = 1
+i = 2
+n= int(input("Количество элементов ряда Фибоначчи: "))
+array = [F1,F2]
+print(array)
+while i < n :
+    sum = F1+F2
+    print(sum)
+    F1= F2
+    F2 = sum
+    i=i+1
+    array.append(sum)
+print(array)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
